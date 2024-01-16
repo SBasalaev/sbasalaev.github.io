@@ -1,0 +1,1 @@
+packageSearchIndex = [{"l":"All Packages","u":"allpackages-index.html"},{"m":"me.sbasalaev.common","l":"me.sbasalaev"},{"m":"me.sbasalaev.common","l":"me.sbasalaev.annotation"},{"m":"me.sbasalaev.common","l":"me.sbasalaev.collection"},{"m":"me.sbasalaev.common","l":"me.sbasalaev.staque"}];updateSearchResults();
