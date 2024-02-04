@@ -520,7 +520,7 @@ loadScripts(document, 'script');</script>
 <dl class="index">
 <dt><a href="me.sbasalaev.common/me/sbasalaev/Lazy.html#get()" class="member-name-link">get()</a> - Method in class me.sbasalaev.<a href="me.sbasalaev.common/me/sbasalaev/Lazy.html" title="class in me.sbasalaev">Lazy</a></dt>
 <dd>
-<div class="block">Evaluates and returns value of this Lazy.</div>
+<div class="block">Evaluates and returns the value.</div>
 </dd>
 <dt><a href="me.sbasalaev.common/me/sbasalaev/collection/List.html#get(int)" class="member-name-link">get(int)</a> - Method in class me.sbasalaev.collection.<a href="me.sbasalaev.common/me/sbasalaev/collection/List.html" title="class in me.sbasalaev.collection">List</a></dt>
 <dd>
@@ -734,7 +734,11 @@ loadScripts(document, 'script');</script>
 </dd>
 <dt><a href="me.sbasalaev.common/me/sbasalaev/Lazy.html#%3Cinit%3E(java.util.function.Supplier)" class="member-name-link">Lazy(Supplier&lt;T&gt;)</a> - Constructor for class me.sbasalaev.<a href="me.sbasalaev.common/me/sbasalaev/Lazy.html" title="class in me.sbasalaev">Lazy</a></dt>
 <dd>
-<div class="block">Creates new instance that lazily evaluates given supplier.</div>
+<div class="block">Creates new instance that lazily evaluates value from given supplier.</div>
+</dd>
+<dt><a href="me.sbasalaev.common/me/sbasalaev/Lazy.html#%3Cinit%3E(T)" class="member-name-link">Lazy(T)</a> - Constructor for class me.sbasalaev.<a href="me.sbasalaev.common/me/sbasalaev/Lazy.html" title="class in me.sbasalaev">Lazy</a></dt>
+<dd>
+<div class="block">Creates new instance with the value that is already evaluated.</div>
 </dd>
 <dt><a href="me.sbasalaev.common/me/sbasalaev/collection/Iterators.html#limit(java.util.Iterator,int)" class="member-name-link">limit(Iterator&lt;T&gt;, int)</a> - Static method in class me.sbasalaev.collection.<a href="me.sbasalaev.common/me/sbasalaev/collection/Iterators.html" title="class in me.sbasalaev.collection">Iterators</a></dt>
 <dd>
@@ -1199,6 +1203,18 @@ loadScripts(document, 'script');</script>
 <dd>
 <div class="block">Returns list of elements of this traversable sorted by given comparator.</div>
 </dd>
+<dt><a href="me.sbasalaev.common/me/sbasalaev/collection/Collection.html#spliterator()" class="member-name-link">spliterator()</a> - Method in class me.sbasalaev.collection.<a href="me.sbasalaev.common/me/sbasalaev/collection/Collection.html" title="class in me.sbasalaev.collection">Collection</a></dt>
+<dd>
+<div class="block">Creates a <a href="https://docs.oracle.com/en/java/javase/17/docs/api/java.base/java/util/Spliterator.html" title="class or interface in java.util" class="external-link"><code>Spliterator</code></a> over elements of this collection.</div>
+</dd>
+<dt><a href="me.sbasalaev.common/me/sbasalaev/collection/List.html#spliterator()" class="member-name-link">spliterator()</a> - Method in class me.sbasalaev.collection.<a href="me.sbasalaev.common/me/sbasalaev/collection/List.html" title="class in me.sbasalaev.collection">List</a></dt>
+<dd>
+<div class="block">Creates a <a href="https://docs.oracle.com/en/java/javase/17/docs/api/java.base/java/util/Spliterator.html" title="class or interface in java.util" class="external-link"><code>Spliterator</code></a> over elements of this list.</div>
+</dd>
+<dt><a href="me.sbasalaev.common/me/sbasalaev/collection/Set.html#spliterator()" class="member-name-link">spliterator()</a> - Method in class me.sbasalaev.collection.<a href="me.sbasalaev.common/me/sbasalaev/collection/Set.html" title="class in me.sbasalaev.collection">Set</a></dt>
+<dd>&nbsp;</dd>
+<dt><a href="me.sbasalaev.common/me/sbasalaev/Opt.html#spliterator()" class="member-name-link">spliterator()</a> - Method in class me.sbasalaev.<a href="me.sbasalaev.common/me/sbasalaev/Opt.html" title="class in me.sbasalaev">Opt</a></dt>
+<dd>&nbsp;</dd>
 <dt><a href="me.sbasalaev.common/me/sbasalaev/staque/Stack.html" class="type-name-link" title="interface in me.sbasalaev.staque">Stack&lt;T&gt;</a> - Interface in <a href="me.sbasalaev.common/me/sbasalaev/staque/package-summary.html">me.sbasalaev.staque</a></dt>
 <dd>
 <div class="block">Last-in-first-out element feed.</div>
@@ -1211,6 +1227,12 @@ loadScripts(document, 'script');</script>
 <dd>
 <div class="block">Throws IllegalStateException with given <code>message</code> if the <code>condition</code> fails.</div>
 </dd>
+<dt><a href="me.sbasalaev.common/me/sbasalaev/collection/Collection.html#stream()" class="member-name-link">stream()</a> - Method in class me.sbasalaev.collection.<a href="me.sbasalaev.common/me/sbasalaev/collection/Collection.html" title="class in me.sbasalaev.collection">Collection</a></dt>
+<dd>
+<div class="block">Returns a sequential <code>Stream</code> with this collection as its source.</div>
+</dd>
+<dt><a href="me.sbasalaev.common/me/sbasalaev/Opt.html#stream()" class="member-name-link">stream()</a> - Method in class me.sbasalaev.<a href="me.sbasalaev.common/me/sbasalaev/Opt.html" title="class in me.sbasalaev">Opt</a></dt>
+<dd>&nbsp;</dd>
 <dt><a href="me.sbasalaev.common/me/sbasalaev/API.html#sum(me.sbasalaev.collection.Traversable)" class="member-name-link">sum(Traversable&lt;Integer&gt;)</a> - Static method in class me.sbasalaev.<a href="me.sbasalaev.common/me/sbasalaev/API.html" title="class in me.sbasalaev">API</a></dt>
 <dd>
 <div class="block">Returns sum of all numbers in a given traversable.</div>

@@ -118,10 +118,6 @@ loadScripts(document, 'script');</script>
  serves the same purpose but is not <a href="collection/Traversable.html" title="interface in me.sbasalaev.collection">traversable</a>.
  Values can be converted between <a href="Opt.html" title="class in me.sbasalaev"><code>Opt</code></a> and <a href="https://docs.oracle.com/en/java/javase/17/docs/api/java.base/java/util/Optional.html" title="class or interface in java.util" class="external-link"><code>Optional</code></a>
  with <a href="#fromJava(java.util.Optional)"><code>fromJava()</code></a> and <a href="#toJava()"><code>toJava()</code></a>.</div>
-<dl class="notes">
-<dt>Author:</dt>
-<dd>Sergey Basalaev</dd>
-</dl>
 </section>
 <section class="summary">
 <ul class="summary-list">
@@ -237,6 +233,16 @@ loadScripts(document, 'script');</script>
 <div class="col-last odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4">
 <div class="block">Number of elements in this collection.</div>
 </div>
+<div class="col-first even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4"><code><a href="https://docs.oracle.com/en/java/javase/17/docs/api/java.base/java/util/Spliterator.html" title="class or interface in java.util" class="external-link">Spliterator</a><wbr>&lt;<a href="Opt.html" title="type parameter in Opt">T</a>&gt;</code></div>
+<div class="col-second even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4"><code><a href="#spliterator()" class="member-name-link">spliterator</a>()</code></div>
+<div class="col-last even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4">
+<div class="block">Creates a <a href="https://docs.oracle.com/en/java/javase/17/docs/api/java.base/java/util/Spliterator.html" title="class or interface in java.util" class="external-link"><code>Spliterator</code></a> over elements of this collection.</div>
+</div>
+<div class="col-first odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4"><code><a href="https://docs.oracle.com/en/java/javase/17/docs/api/java.base/java/util/stream/Stream.html" title="class or interface in java.util.stream" class="external-link">Stream</a><wbr>&lt;<a href="Opt.html" title="type parameter in Opt">T</a>&gt;</code></div>
+<div class="col-second odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4"><code><a href="#stream()" class="member-name-link">stream</a>()</code></div>
+<div class="col-last odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4">
+<div class="block">Returns a sequential <code>Stream</code> with this collection as its source.</div>
+</div>
 <div class="col-first even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4"><code><a href="https://docs.oracle.com/en/java/javase/17/docs/api/java.base/java/util/Optional.html" title="class or interface in java.util" class="external-link">Optional</a><wbr>&lt;<a href="Opt.html" title="type parameter in Opt">T</a>&gt;</code></div>
 <div class="col-second even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4"><code><a href="#toJava()" class="member-name-link">toJava</a>()</code></div>
 <div class="col-last even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4">
@@ -253,7 +259,7 @@ loadScripts(document, 'script');</script>
 <code><a href="https://docs.oracle.com/en/java/javase/17/docs/api/java.base/java/lang/Object.html#finalize()" title="class or interface in java.lang" class="external-link">finalize</a>, <a href="https://docs.oracle.com/en/java/javase/17/docs/api/java.base/java/lang/Object.html#getClass()" title="class or interface in java.lang" class="external-link">getClass</a>, <a href="https://docs.oracle.com/en/java/javase/17/docs/api/java.base/java/lang/Object.html#notify()" title="class or interface in java.lang" class="external-link">notify</a>, <a href="https://docs.oracle.com/en/java/javase/17/docs/api/java.base/java/lang/Object.html#notifyAll()" title="class or interface in java.lang" class="external-link">notifyAll</a>, <a href="https://docs.oracle.com/en/java/javase/17/docs/api/java.base/java/lang/Object.html#wait()" title="class or interface in java.lang" class="external-link">wait</a>, <a href="https://docs.oracle.com/en/java/javase/17/docs/api/java.base/java/lang/Object.html#wait(long)" title="class or interface in java.lang" class="external-link">wait</a>, <a href="https://docs.oracle.com/en/java/javase/17/docs/api/java.base/java/lang/Object.html#wait(long,int)" title="class or interface in java.lang" class="external-link">wait</a></code></div>
 <div class="inherited-list">
 <h3 id="methods-inherited-from-class-java.lang.Iterable">Methods inherited from interface&nbsp;java.lang.<a href="https://docs.oracle.com/en/java/javase/17/docs/api/java.base/java/lang/Iterable.html" title="class or interface in java.lang" class="external-link">Iterable</a></h3>
-<code><a href="https://docs.oracle.com/en/java/javase/17/docs/api/java.base/java/lang/Iterable.html#forEach(java.util.function.Consumer)" title="class or interface in java.lang" class="external-link">forEach</a>, <a href="https://docs.oracle.com/en/java/javase/17/docs/api/java.base/java/lang/Iterable.html#spliterator()" title="class or interface in java.lang" class="external-link">spliterator</a></code></div>
+<code><a href="https://docs.oracle.com/en/java/javase/17/docs/api/java.base/java/lang/Iterable.html#forEach(java.util.function.Consumer)" title="class or interface in java.lang" class="external-link">forEach</a></code></div>
 <div class="inherited-list">
 <h3 id="methods-inherited-from-class-me.sbasalaev.collection.Traversable">Methods inherited from interface&nbsp;me.sbasalaev.collection.<a href="collection/Traversable.html" title="interface in me.sbasalaev.collection">Traversable</a></h3>
 <code><a href="collection/Traversable.html#chain(me.sbasalaev.collection.Traversable)">chain</a>, <a href="collection/Traversable.html#chainMap(java.util.function.Function)">chainMap</a>, <a href="collection/Traversable.html#count(java.util.function.Predicate)">count</a>, <a href="collection/Traversable.html#exists(java.util.function.Predicate)">exists</a>, <a href="collection/Traversable.html#filter(java.util.function.Predicate)">filter</a>, <a href="collection/Traversable.html#find(java.util.function.Predicate)">find</a>, <a href="collection/Traversable.html#first()">first</a>, <a href="collection/Traversable.html#forall(java.util.function.Predicate)">forall</a>, <a href="collection/Traversable.html#groupedBy(java.util.function.Function)">groupedBy</a>, <a href="collection/Traversable.html#groupedIntoLists(java.util.function.Function)">groupedIntoLists</a>, <a href="collection/Traversable.html#groupedIntoSets(java.util.function.Function)">groupedIntoSets</a>, <a href="collection/Traversable.html#join(java.lang.String)">join</a>, <a href="collection/Traversable.html#join(java.lang.String,java.lang.String,java.lang.String)">join</a>, <a href="collection/Traversable.html#map(java.util.function.Function)">map</a>, <a href="collection/Traversable.html#sortedBy(java.util.Comparator)">sortedBy</a>, <a href="collection/Traversable.html#take(int)">take</a>, <a href="collection/Traversable.html#takeWhile(java.util.function.Predicate)">takeWhile</a></code></div>
@@ -409,6 +415,33 @@ loadScripts(document, 'script');</script>
 <h3>narrow</h3>
 <div class="member-signature"><span class="modifiers">public</span>&nbsp;<span class="type-parameters">&lt;U&gt;</span>&nbsp;<span class="return-type"><a href="Opt.html" title="class in me.sbasalaev">Opt</a>&lt;U&gt;</span>&nbsp;<span class="element-name">narrow</span><wbr><span class="parameters">(<a href="https://docs.oracle.com/en/java/javase/17/docs/api/java.base/java/lang/Class.html" title="class or interface in java.lang" class="external-link">Class</a>&lt;U&gt;&nbsp;clazz)</span></div>
 <div class="block">Returns this optional if its value is of given class, empty optional otherwise.</div>
+</section>
+</li>
+<li>
+<section class="detail" id="spliterator()">
+<h3>spliterator</h3>
+<div class="member-signature"><span class="modifiers">public</span>&nbsp;<span class="return-type"><a href="https://docs.oracle.com/en/java/javase/17/docs/api/java.base/java/util/Spliterator.html" title="class or interface in java.util" class="external-link">Spliterator</a>&lt;<a href="Opt.html" title="type parameter in Opt">T</a>&gt;</span>&nbsp;<span class="element-name">spliterator</span>()</div>
+<div class="block"><span class="description-from-type-label">Description copied from class:&nbsp;<code><a href="collection/Collection.html#spliterator()">Collection</a></code></span></div>
+<div class="block">Creates a <a href="https://docs.oracle.com/en/java/javase/17/docs/api/java.base/java/util/Spliterator.html" title="class or interface in java.util" class="external-link"><code>Spliterator</code></a> over elements of this collection.
+ The spliterator reports <a href="https://docs.oracle.com/en/java/javase/17/docs/api/java.base/java/util/Spliterator.html#NONNULL" title="class or interface in java.util" class="external-link"><code>Spliterator.NONNULL</code></a> and <a href="https://docs.oracle.com/en/java/javase/17/docs/api/java.base/java/util/Spliterator.html#SIZED" title="class or interface in java.util" class="external-link"><code>Spliterator.SIZED</code></a>.</div>
+<dl class="notes">
+<dt>Specified by:</dt>
+<dd><code><a href="https://docs.oracle.com/en/java/javase/17/docs/api/java.base/java/lang/Iterable.html#spliterator()" title="class or interface in java.lang" class="external-link">spliterator</a></code>&nbsp;in interface&nbsp;<code><a href="https://docs.oracle.com/en/java/javase/17/docs/api/java.base/java/lang/Iterable.html" title="class or interface in java.lang" class="external-link">Iterable</a>&lt;<a href="Opt.html" title="type parameter in Opt">T</a>&gt;</code></dd>
+<dt>Specified by:</dt>
+<dd><code><a href="collection/Collection.html#spliterator()">spliterator</a></code>&nbsp;in class&nbsp;<code><a href="collection/Collection.html" title="class in me.sbasalaev.collection">Collection</a>&lt;<a href="Opt.html" title="type parameter in Opt">T</a>&gt;</code></dd>
+</dl>
+</section>
+</li>
+<li>
+<section class="detail" id="stream()">
+<h3>stream</h3>
+<div class="member-signature"><span class="modifiers">public</span>&nbsp;<span class="return-type"><a href="https://docs.oracle.com/en/java/javase/17/docs/api/java.base/java/util/stream/Stream.html" title="class or interface in java.util.stream" class="external-link">Stream</a>&lt;<a href="Opt.html" title="type parameter in Opt">T</a>&gt;</span>&nbsp;<span class="element-name">stream</span>()</div>
+<div class="block"><span class="description-from-type-label">Description copied from class:&nbsp;<code><a href="collection/Collection.html#stream()">Collection</a></code></span></div>
+<div class="block">Returns a sequential <code>Stream</code> with this collection as its source.</div>
+<dl class="notes">
+<dt>Overrides:</dt>
+<dd><code><a href="collection/Collection.html#stream()">stream</a></code>&nbsp;in class&nbsp;<code><a href="collection/Collection.html" title="class in me.sbasalaev.collection">Collection</a>&lt;<a href="Opt.html" title="type parameter in Opt">T</a>&gt;</code></dd>
+</dl>
 </section>
 </li>
 <li>

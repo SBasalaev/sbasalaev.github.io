@@ -99,12 +99,12 @@ loadScripts(document, 'script');</script>
 <div class="type-signature"><span class="modifiers">public final class </span><span class="element-name type-name-label">Lazy&lt;<a href="annotation/Out.html" title="annotation interface in me.sbasalaev.annotation">@Out</a> T&gt;</span>
 <span class="extends-implements">extends <a href="https://docs.oracle.com/en/java/javase/17/docs/api/java.base/java/lang/Object.html" title="class or interface in java.lang" class="external-link">Object</a>
 implements <a href="https://docs.oracle.com/en/java/javase/17/docs/api/java.base/java/util/function/Supplier.html" title="class or interface in java.util.function" class="external-link">Supplier</a>&lt;T&gt;</span></div>
-<div class="block">Lazily evaluated value.</div>
+<div class="block">Lazily evaluated value.
+ This class is thread-safe, the evaluation of the value only happens once
+ and it is safe to call <a href="#get()"><code>get()</code></a> simultaneously from different threads.</div>
 <dl class="notes">
 <dt>Since:</dt>
 <dd>1.1</dd>
-<dt>Author:</dt>
-<dd>Sergey Basalaev</dd>
 </dl>
 </section>
 <section class="summary">
@@ -119,7 +119,11 @@ implements <a href="https://docs.oracle.com/en/java/javase/17/docs/api/java.base
 <div class="table-header col-last">Description</div>
 <div class="col-constructor-name even-row-color"><code><a href="#%3Cinit%3E(java.util.function.Supplier)" class="member-name-link">Lazy</a><wbr>(<a href="https://docs.oracle.com/en/java/javase/17/docs/api/java.base/java/util/function/Supplier.html" title="class or interface in java.util.function" class="external-link">Supplier</a>&lt;<a href="annotation/Out.html" title="annotation interface in me.sbasalaev.annotation">@Out</a> <a href="Lazy.html" title="type parameter in Lazy">T</a>&gt;&nbsp;supplier)</code></div>
 <div class="col-last even-row-color">
-<div class="block">Creates new instance that lazily evaluates given supplier.</div>
+<div class="block">Creates new instance that lazily evaluates value from given supplier.</div>
+</div>
+<div class="col-constructor-name odd-row-color"><code><a href="#%3Cinit%3E(T)" class="member-name-link">Lazy</a><wbr>(<a href="annotation/Out.html" title="annotation interface in me.sbasalaev.annotation">@Out</a> <a href="Lazy.html" title="type parameter in Lazy">T</a>&nbsp;value)</code></div>
+<div class="col-last odd-row-color">
+<div class="block">Creates new instance with the value that is already evaluated.</div>
 </div>
 </div>
 </section>
@@ -138,7 +142,7 @@ implements <a href="https://docs.oracle.com/en/java/javase/17/docs/api/java.base
 <div class="col-first even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4"><code><a href="Lazy.html" title="type parameter in Lazy">T</a></code></div>
 <div class="col-second even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4"><code><a href="#get()" class="member-name-link">get</a>()</code></div>
 <div class="col-last even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4">
-<div class="block">Evaluates and returns value of this Lazy.</div>
+<div class="block">Evaluates and returns the value.</div>
 </div>
 <div class="col-first odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4"><code>boolean</code></div>
 <div class="col-second odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4"><code><a href="#isEvaluated()" class="member-name-link">isEvaluated</a>()</code></div>
@@ -169,7 +173,14 @@ implements <a href="https://docs.oracle.com/en/java/javase/17/docs/api/java.base
 <section class="detail" id="&lt;init&gt;(java.util.function.Supplier)">
 <h3>Lazy</h3>
 <div class="member-signature"><span class="modifiers">public</span>&nbsp;<span class="element-name">Lazy</span><wbr><span class="parameters">(<a href="https://docs.oracle.com/en/java/javase/17/docs/api/java.base/java/util/function/Supplier.html" title="class or interface in java.util.function" class="external-link">Supplier</a>&lt;<a href="annotation/Out.html" title="annotation interface in me.sbasalaev.annotation">@Out</a> <a href="Lazy.html" title="type parameter in Lazy">T</a>&gt;&nbsp;supplier)</span></div>
-<div class="block">Creates new instance that lazily evaluates given supplier.</div>
+<div class="block">Creates new instance that lazily evaluates value from given supplier.</div>
+</section>
+</li>
+<li>
+<section class="detail" id="&lt;init&gt;(T)">
+<h3 id="&lt;init&gt;(java.lang.Object)">Lazy</h3>
+<div class="member-signature"><span class="modifiers">public</span>&nbsp;<span class="element-name">Lazy</span><wbr><span class="parameters">(<a href="annotation/Out.html" title="annotation interface in me.sbasalaev.annotation">@Out</a> <a href="Lazy.html" title="type parameter in Lazy">T</a>&nbsp;value)</span></div>
+<div class="block">Creates new instance with the value that is already evaluated.</div>
 </section>
 </li>
 </ul>
@@ -184,7 +195,7 @@ implements <a href="https://docs.oracle.com/en/java/javase/17/docs/api/java.base
 <section class="detail" id="get()">
 <h3>get</h3>
 <div class="member-signature"><span class="modifiers">public</span>&nbsp;<span class="return-type"><a href="Lazy.html" title="type parameter in Lazy">T</a></span>&nbsp;<span class="element-name">get</span>()</div>
-<div class="block">Evaluates and returns value of this Lazy.
+<div class="block">Evaluates and returns the value.
  If value is already evaluated, just returns it.</div>
 <dl class="notes">
 <dt>Specified by:</dt>
