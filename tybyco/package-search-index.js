@@ -1,0 +1,1 @@
+packageSearchIndex = [{"l":"All Packages","u":"allpackages-index.html"},{"m":"me.sbasalaev.tybyco","l":"me.sbasalaev.tybyco"},{"m":"me.sbasalaev.tybyco","l":"me.sbasalaev.tybyco.builders"},{"m":"me.sbasalaev.tybyco","l":"me.sbasalaev.tybyco.descriptors"}];updateSearchResults();
