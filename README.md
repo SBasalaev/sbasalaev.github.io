@@ -2,5 +2,5 @@
 
 Here is API documentation for the latest versions of my projects:
 
-* [sbasalaev-common](https://api.sbasalaev.me/sbasalaev-common/)
-* [tybyco](https://api.sbasalaev.me/tybyco/)
+* [sbasalaev-common](https://sbasalaev.github.io/sbasalaev-common/)
+* [tybyco](https://sbasalaev.github.io/tybyco/)
